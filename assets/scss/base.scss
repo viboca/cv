@@ -1,0 +1,100 @@
+// #FABA76 blanco A
+// #DE660B opaco B
+// #F56618 medio C
+// #DE430B intenso D
+// #FF390D fuerte E
+// #10263d azul
+
+//Alert inicial
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #FF390D;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.0625em;
+}
+
+//Fondo home
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/banner7.png") top right no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#hero::before {
+    content: "";
+    background: rgba(153, 114, 72, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+//Iconos redes sociales
+#hero .social-links a {
+    font-size: 50px;
+    color:#10263d;
+    line-height: 1;
+}
+#hero .social-links a:hover {
+    color: #F56618;
+  }
+//Nombre
+#hero h1 {
+    margin: 0;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 56px;
+    color:  #10263d;
+}
+
+//Hover del menu
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #fff;
+    background: #FF390D;
+}
+//Animacion escribir txt
+#hero p span {
+    color: #FF390D;
+    letter-spacing: 1px;
+}
+#hero p {
+    color: #10263d;
+    margin: 15px 0 0 0;
+        margin-top: 15px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+}
+//Menu hamburguesa
+.mobile-nav-active .mobile-nav-toggle i {
+    color: #F56618;
+}
+.mobile-nav-toggle i {
+    color: #10263d;
+}
+
+//Titulos principales secciones about
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #79290a;
+}
+//Rayita inferior de titutlos
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #F56618;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
